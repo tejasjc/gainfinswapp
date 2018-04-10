@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        {% load staticfiles %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GAINFINS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- Fonts -->
+        <!-- Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <!-- CSS -->
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'Home/css/themefisher-fonts.css' %}">
+        <link rel="stylesheet" href="{% static 'Home/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'Home/css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'Home/css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'Home/css/style.css' %}">
+        <!-- Responsive Stylesheet -->
+        <link rel="stylesheet" href="{% static 'Home/css/responsive.css' %}">
+    </head>
+
+    <body id="body">
+
+    	<div id="preloader">
+    		<div class="book">
+    		  <div class="book__page"></div>
+    		  <div class="book__page"></div>
+    		  <div class="book__page"></div>
+    		</div>
+    	</div>
+
+	    <!--
+	    Header start
+	    ==================== -->
+        <div class="container">
+             <nav class="navbar navbar-fixed-top navigation navbar-toggleable-md bg-white navbar-custom" id="top-nav">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static 'Home/images/logo_gf.png' %}" alt="">
+                </a>
+
+              <button class="navbar-toggler hidden-md-up float-lg-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                  <a href="#about"><i class="material-icons">menu</i></a>
+              </button>
+              <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+                <ul class="nav navbar-nav menu float-lg-right" id="top-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#service">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">TEAM</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#works">WORK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+
+
+	    <section class="hero-area bg-1">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-7">
+	                    <div class="block">
+	                        <h1 class="wow fadeInDown" data-wow-delay="0.3s" data-wow-duration=".2s">Bring Your Idea Into Reality...! </h1>
+	                        <div id="app"></div>
+	                        <div class="wow fadeInDown" data-wow-delay="0.7s" data-wow-duration=".7s">
+	                        	<a class="btn btn-home theme" href="#about" role="button">Get Started</a>
+	                        </div>
+	                    </div>
+	                </div>
+
+	            </div><!-- .row close -->
+	        </div><!-- .container close -->
+	    </section><!-- header close -->
+
+
+
+        <!--
+        About start
+        ==================== -->
+        <section  class="section about bg-gray" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12 wow fadeInLeft">
+                        <div class="content">
+                        	<div class="sub-heading">
+                        		<h3> It’s always profitable to be discoverable on the internet. Because everyone can see you when your on the internet.</h3>
+                        	</div>
+                            <p>Placing your website address on your promotional materials will help you gain additional exposure and encourage the visitors to first check your site for the information they are seeking. You can set-up personalized email addresses for your company and executives.</p>
+                            <p>
+                                So, do you want to put your venture online? Don't worry, we'll help you out with our customized <a href="#services"><font color="#81d4fa">solutions</font></a>.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="carousel slide" data-ride="carousel">
+                                      <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                          <img class="d-block img-fluid" src="{% static 'Home/images/about/1.png' %}" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block img-fluid" src="{% static 'Home/images/about/2.png' %}" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block img-fluid" src="{% static 'Home/images/about/3.png' %}" alt="Third slide">
+                                        </div>
+                                      </div>
+
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #about close -->
+        <!--
+        About end
+        ==================== -->
+
+        <!--service start-->
+        <section id="services" class="section section-padded">
+        <div class="container">
+            <div class="row text-center title">
+                <div class="titlestyle">
+                <h2 >Services</h2>
+            </div>
+                <h4 class="light muted">Achieve the best results with our wide variety of options!</h4>
+
+
+            </div>
+            <div class="row services">
+                <div class="col-md-3 wow fadeInLeft" >
+                    <div class="subservice">
+                        <div class="icon-holder">
+                            <img src="{% static 'Home/images/icons/web.png' %}" alt="" class="icon">
+                        </div>
+                        <h4 class="heading">Web Development</h4>
+                        <p class="description">Your website is a powerful marketing tool. We will build you a responsive website to improve your business image.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="subservice">
+                        <div class="icon-holder">
+                            <img src="{% static 'Home/images/icons/app.png' %}" alt="" class="icon">
+                        </div>
+                        <h4 class="heading"> Application Development</h4>
+                        <p class="description">High-end and cost-efficient mobile app development to accomplish all your business needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInLeft" data-wow-delay="0.5s">
+                    <div class="subservice">
+                        <div class="icon-holder">
+                            <img src="{% static 'Home/images/icons/search.png' %}" alt="" class="icon">
+                        </div>
+                        <h4 class="heading">SEO</h4>
+                        <p class="description">When your site appears on the first page of major search engines, such as Google, your potential customers are more likely to trust your brand.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInLeft" data-wow-delay="0.7s">
+                    <div class="subservice">
+                        <div class="icon-holder">
+                            <img src="{% static 'Home/images/icons/dm.png' %}" alt="" class="icon">
+                        </div>
+                        <h4 class="heading">Digital Marketing</h4>
+                        <p class="description">Marketing will keep you on toes in promoting and endorsing your brand. We offer various cost-efficient digital marketing strategies to increase your customer base.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cut cut-bottom"></div>
+    </section>
+        <!-- service end-->
+
+        <!--
+        Service start
+        ==================== -->
+        <section id="service" class="service section bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class=" wow fadeInUp ">
+                        <div class="heading wow fadeInUp">
+                        <h2>Find Better Solutions.Build Better Products.</h2>
+                    </div>
+
+                    </div>
+                    <div class="col-sm-6 col-md-3 wow fadeInLeft">
+                        <div class="block">
+                            <i class="material-icons">settings_overscan</i>
+                            <h3>Fully Responsive</h3>
+                            <p> Responsive websites provide an optimal viewing experience, ease of reading and navigation with minimum resizing, panning and scrolling.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="block">
+                            <i class="material-icons">fast_forward</i>
+                        	<h3>Speed Optimized</h3>
+                            <p>We build instantly loadable and swiftly navigable websites, which is a primary factor for dictating success in modern online businesses. Speed is love!!</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.9s">
+                        <div class="block">
+                            <i class="material-icons">search</i>
+                            <h3>Fully SEO Optimized</h3>
+                            <p>Search Engine Optimization (SEO) is the practice of increasing the quantity and quality of traffic to your website through organic search engine results.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="block">
+                            <i class="material-icons">trending_up</i>
+                            <h3>Tons of Features</h3>
+                            <p>Enhance your website's productivity with web analytics, A/B testing and more. Your website's security is also our major concern! </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div><!-- .container close -->
+        </section><!-- #service close -->
+<!-- team start -->
+<section id="team" class="section gray-bg">
+        <div class="container">
+            <div class="heading">
+                <div  class="tytlestyle">
+                    <h2 class="margin-top">Team</h2>
+                 <h4 class="light muted" >"None of us is as smart as all of us".</h4>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-3 wow zoomIn">
+                    <a href="{% url 'Cv:cv_tejas' %}">
+                    <div class="team text-center">
+                        <div class="cover" style="background:url('{% static 'Home/images/team/team-cover1.png' %}'); background-size:cover;">
+                            <div class="overlay text-center">
+                                <h3 class="white">Know more</h3>
+
+                            </div>
+                        </div>
+                        <img src="{% static 'Home/images/team/01.jpg' %}" alt="Team Image" class="avatar" width="100%" height="100%">
+                        <div class="title">
+                            <h4>Tejas Chaudhari</h4>
+                            <h5 class="muted regular">Full Stack Developer</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-md-3 wow zoomIn"  data-wow-delay="0.3s">
+                    <a href="{% url 'Cv:cv_rushikesh' %}">
+                    <div class="team text-center">
+                        <div class="cover" style="background:url('{% static 'Home/images/team/team-cover3.png' %}'); background-size:cover;">
+                            <div class="overlay text-center">
+                                <h3 class="white">Know more</h3>
+                            </div>
+                        </div>
+                        <img src="{% static 'Home/images/team/02.jpg' %}" alt="Team Image" class="avatar" width="100%" height="100%">
+                        <div class="title">
+                            <h4>Rushikesh Phalke</h4>
+                            <h5 class="muted regular">Backend Hero</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-md-3 wow zoomIn" data-wow-delay="0.4s">
+                    <a href="{% url 'Cv:cv_sopan' %}">
+                    <div class="team text-center">
+                        <div class="cover" style="background:url('{% static 'Home/images/team/team-cover2.png' %}'); background-size:cover;">
+                            <div class="overlay text-center">
+                                <h3 class="white">Know more</h3>
+                            </div>
+                        </div>
+                        <img src="{% static 'Home/images/team/03.jpg' %}" alt="Team Image" class="avatar" width="100%" height="100%">
+                        <div class="title">
+                            <h4>Sopan Bembde</h4>
+                            <h5 class="muted regular">Cyber Security</h5>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-md-3 wow zoomIn" data-wow-delay="0.5s">
+                    <a href="{% url 'Cv:cv_shubham' %}">
+                    <div class="team text-center">
+                        <div class="cover" style="background:url('{% static 'Home/images/team/team-cover1.png' %}'); background-size:cover;">
+                            <div class="overlay text-center">
+                                <h3 class="white">Know more</h3>
+                            </div>
+                        </div>
+                        <img src="{% static 'Home/images/team/04.jpg' %}" alt="Team Image" class="avatar" width="100%" height="100%">
+                        <div class="title">
+                            <h4>Shubham Chavan</h4>
+                            <h5 class="muted regular">Full Stack Developer</h5>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- team ends -->
+         <section id="works" class="section bg-gray">
+                <div class="container">
+                        <div class="heading">
+                            <div  class="tytlestyle">
+                                 <h2 class="margin-top">Work</h2>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="overlayit">
+                                <div class="col-md-2">
+                                </div>
+                            <div class="col-md-8 wow fadeInLeft" data-wow-delay="0.2s">
+                                <div class="carousel slide" data-ride="carousel">
+                                      <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/vw1.jpeg' %}" alt="First slide" style="background-size:cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/vw2.jpeg' %}" alt="Second slide" style="background-size:cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/vw3.jpeg' %}" alt="Third slide" style="background-size:cover;">
+                                        </div>
+                                      </div>
+                                      <div class="overlay-data">
+                                                <div class="overlay-text">Visionware.online<br>
+                                                    <p style="font-size:14px">VisionWare is an IT Training Institute , established in 2016 by ' the Students For The Students '</p>
+                                                </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row mt-3">
+                            <div class="overlayit">
+                                <div class="col-md-2">
+                                </div>
+                            <div class="col-md-8 wow fadeInLeft" data-wow-delay="0.4s">
+                                <div class="carousel slide" data-ride="carousel">
+                                      <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/k1.png' %}" alt="First slide" style="background-size:cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/k2.png' %}" alt="Second slide" style="background-size:cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/k3.png' %}" alt="Third slide" style="background-size:cover;">
+                                        </div>
+                                      </div>
+                                      <div class="overlay-data">
+                                                <div class="overlay-text">Kratos<br>
+                                                    <p style="font-size:14px">A desktop application for catering resource planning.</p>
+                                                </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                </div>
+                            </div>
+                        </div>
+                            <div class="row mt-3">
+                                <div class="overlayit">
+                                    <div class="col-md-2">
+                                    </div>
+                            <div class="col-md-8 wow fadeInRight" data-wow-delay="0.6s">
+                                <div class="carousel slide" data-ride="carousel">
+                                      <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/sg1.png' %}" alt="First slide" style="background-size:cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/sg2.png' %}" alt="Second slide" style="background-size:cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/sg3.png' %}" alt="Third slide" style="background-size:cover;">
+                                        </div>
+                                      </div>
+                                      <div class="overlay-data">
+                                                <div class="overlay-text">SureGo<br>
+                                                    <p style="font-size:14px">Advance ticketing platform for bookings of bus tickets.</p>
+                                                </div>
+                                      </div>
+                                </div>
+                            </div>
+
+                                     <div class="col-md-2">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                                <div class="overlayit">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-8 wow fadeInLeft" data-wow-delay="0.7s">
+                                <div class="carousel slide ml-3" data-ride="carousel">
+                                      <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/dm1.jpeg' %}" alt="First slide" style="background-size:cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/dm2.jpeg' %}" alt="Second slide" style="background-size:cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/dm3.jpeg' %}" alt="Third slide" style="background-size:cover;">
+                                        </div>
+                                      </div>
+                                      <div class="overlay-data">
+                                                <div class="overlay-text">DigiMess<br>
+                                                    <p style="font-size:14px">A desktop application for catering resource planning.</p>
+                                                </div>
+                                      </div>
+                                </div>
+                            </div>
+
+                                     <div class="col-md-2">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                                <div class="overlayit">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-6 wow fadeInRight ml-3" data-wow-delay="0.8s">
+                                <div class="overlayit">
+                                <img class="d-block img-fluid img-meta" src="{% static 'Home/images/ds.png' %}" alt="DigiShelf image">
+                                    <div class="overlay-data">
+                                        <div class="overlay-text">DigiShelf<br>
+                                                    <p style="font-size:14px">A desktop application for Library management.</p>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                     <div class="col-md-2">
+                                    </div>
+                            </div>
+                        </div>
+
+
+
+
+                </div>
+         </section>
+        <!--
+        Contact start
+        ==================== -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="block">
+                            <div class="heading wow fadeInUp">
+                                <h2>Get In Touch</h2>
+                                <p>Feel free to contact us...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3 wow fadeInUp" data-wow-delay="0.3s">
+                    	<div class="form-group">
+                    	    <form action="/sendmail/" method="post" id="contact-form">
+                                {% csrf_token %}
+                    	        <div class="input-field">
+                    	            <input type="text" class="form-control" placeholder="Your Name" name="name">
+                    	        </div>
+                    	        <div class="input-field">
+                    	            <input type="email" class="form-control" placeholder="Email Address" name="email">
+                    	        </div>
+                    	        <div class="input-field">
+                    	            <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
+                    	        </div>
+                    	        <button class="btn btn-send" type="submit">Send</button>
+                    	    </form>
+
+                    	    <div id="success">
+                    	        <p>Your Message was sent successfully</p>
+                    	    </div>
+                    	    <div id="error">
+                    	        <p>Your Message was not sent successfully</p>
+                    	    </div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="know" class="section bg-gray">
+        <div class="container">
+            <div class="container content-lg">
+                    <div class="row">
+                        <div class="col-sm-4 mb-3">
+                            <div class="text-right sm-text-left">
+                                <h2 class="margin-b-0">Reach us</h2>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-1">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-6 mb-3">
+                                    <h5>Location</h5>
+                                    <a>Pune, India</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6 mb-3">
+                                    <h5>Phone</h5>
+                                    <a>39765600451</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6 mb-3" >
+                                    <h5>Email</h5>
+                                    <a href="mailto:support@gainfins.com">support@gainfins.com</a>
+                                </div>
+                                <div class="col-md-3 col-xs-6 mb-3">
+                                    <h5>Web</h5>
+                                    <a href="bit.ly/gainfins">gainfins.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+        </div>
+        </section>
+
+        <section clas="wow fadeInUp">
+        	<div class="map-wrapper">
+        	</div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <p>Copyright &copy; <a href="http://www.gainfins.com">GainFins</a>| All right reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Js -->
+        <script src="{% static 'Home/js/vendor/jquery-2.1.1.min.js' %}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+        <script src="{% static 'Home/js/vendor/modernizr-2.6.2.min.js' %}"></script>
+        <script src="{% static 'Home/js/jquery.lwtCountdown-1.0.js' %}"></script>
+        <script src="{% static 'Home/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'Home/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'Home/js/jquery.form.js' %}"></script>
+        <script src="{% static 'Home/js/jquery.nav.js' %}"></script>
+            <script src="{% static 'Home/js/typewriter.js' %}"></script>
+
+        <script src="{% static 'Home/js/wow.min.js' %}"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script> -->
+        <script src="{% static 'Home/js/main.js' %}"></script>
+
+    </body>
+</html>
