@@ -4,4 +4,5 @@ app_name='Home'
 urlpatterns = [
      url(r'^$', views.index,name='index'),
      url(r'^sendmail/', views.sendm,name='sendm'),
+
 ]

@@ -27,20 +27,7 @@ $(document).ready(function(){
         $(".navigation").removeClass("animated");
     }});
 
-
-
-    /*$('input, textarea').data('holder', $('input, textarea').attr('placeholder'));
-
-    $('input, textarea').focusin(function () {
-        $(this).attr('placeholder', '');
-    });
-    $('input, textarea').focusout(function () {
-        $(this).attr('placeholder', $(this).data('holder'));
-    });*/
-
-
-    //contact form validation
-    $("#contact-form").validate({
+     $("#contact-form").validate({
         rules: {
             name: {
                 required: true,
@@ -66,8 +53,36 @@ $(document).ready(function(){
             },
             email: "Please enter a valid email address"
         },
+         submitHandler: function(form) {
+        $.ajax({
+            url : "sendmail/", // the endpoint
+            type : "POST", // http method
+            data : { name : $('#name').val(),
+                     email: $('#email').val(),
+                     message: $('#message').val(),
+                    }, // data sent with the post request
+
+            // handle a successful response
+            success : function(json) {
+                $('#name').val(''); // remove the value from the input
+                $('#email').val(''); // remove the value from the input
+                $('#message').val(''); // remove the value from the input
+                 $('#result').show().html(json['result'])
+            },
+
+            // handle a non-successful response
+            error : function(xhr,errmsg,err) {
+                $('#results').html("<div class='alert-box alert radius' data-alert>Oops! We have encountered an error: "+errmsg+
+                    " <a href='#' class='close'>&times;</a></div>"); // add the error to the dom
+
+            }
+        });
+        }
 
     });
+
+     $('#result').hide()
+
 
 });
 

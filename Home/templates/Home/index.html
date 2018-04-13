@@ -367,8 +367,8 @@
                                         </div>
                                       </div>
                                       <div class="overlay-data">
-                                                <div class="overlay-text">Kratos<br>
-                                                    <p style="font-size:14px">A desktop application for catering resource planning.</p>
+                                                <div class="overlay-text">KratosRacing<br>
+                                                    <p style="font-size:14px">A web application for transaction management.</p>
                                                 </div>
                                       </div>
                                 </div>
@@ -477,27 +477,21 @@
 
                     <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3 wow fadeInUp" data-wow-delay="0.3s">
                     	<div class="form-group">
-                    	    <form action="/sendmail/" method="post" id="contact-form">
+                    	    <form action="" method="post" id="contact-form">
                                 {% csrf_token %}
                     	        <div class="input-field">
-                    	            <input type="text" class="form-control" placeholder="Your Name" name="name">
+                    	            <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
                     	        </div>
                     	        <div class="input-field">
-                    	            <input type="email" class="form-control" placeholder="Email Address" name="email">
+                    	            <input type="email" class="form-control" placeholder="Email Address" name="email" id="email">
                     	        </div>
                     	        <div class="input-field">
-                    	            <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
+                    	            <textarea class="form-control" placeholder="Your Message" rows="3" name="message" id="message"></textarea>
                     	        </div>
                     	        <button class="btn btn-send" type="submit">Send</button>
                     	    </form>
-
-                    	    <div id="success">
-                    	        <p>Your Message was sent successfully</p>
-                    	    </div>
-                    	    <div id="error">
-                    	        <p>Your Message was not sent successfully</p>
-                    	    </div>
                     	</div>
+                        <p id="result">hello</p>
                     </div>
                 </div>
             </div>
@@ -520,7 +514,7 @@
                                 </div>
                                 <div class="col-md-3 col-xs-6 mb-3">
                                     <h5>Phone</h5>
-                                    <a>9765600450</a>
+                                    <a>9284096193</a>
                                 </div>
                                 <div class="col-md-3 col-xs-6 mb-3" >
                                     <h5>Email</h5>
@@ -528,7 +522,7 @@
                                 </div>
                                 <div class="col-md-3 col-xs-6 mb-3">
                                     <h5>Web</h5>
-                                    <a href="bit.ly/gainfins">gainfins.com</a>
+                                    <a href="bit.ly/gainfins">www.gainfins.com</a>
                                 </div>
                             </div>
                         </div>

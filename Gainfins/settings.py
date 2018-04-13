@@ -102,8 +102,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'gainfinswebapp@gmail.com'
-EMAIL_HOST_PASSWORD = 'g@!nf!ns'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 
 # Internationalization
@@ -124,3 +124,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#for email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'gainfinswebapp@gmail.com'
+EMAIL_HOST_PASSWORD = 'g@!nf!ns'
