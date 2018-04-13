@@ -15,7 +15,7 @@ def sendm(request):
     name=request.POST['name']
     mail=request.POST['email']
     msg=request.POST['message']
-
-    send_mail(name, msg, 'tejasjc@gmail.com', ['tejasjc@gmail.com'], fail_silently=False)
+    msgn=msg+"\n"+mail
+    send_mail(name, msgn, 'tejasjc@gmail.com', ['tejasjc@gmail.com'], fail_silently=False)
 
     return render(request, 'Home/index.html')

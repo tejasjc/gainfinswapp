@@ -78,16 +78,16 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('We don\'t just build Websites ,' )
+typewriter.typeString('We don\'t just build Websites' )
     .pauseFor(500)
-    .deleteChars(10)
-    .typeString('Apps ,')
+    .deleteChars(8)
+    .typeString('Apps ')
     .pauseFor(500)
-    .deleteChars(6)
-    .typeString('Softwares ,')
+    .deleteChars(5)
+    .typeString('Softwares ')
     .pauseFor(500)
-    .deleteChars(11)
-    .typeString('Stuff , We build your Business !')
+    .deleteAll()
+    .typeString('We build your Business !')
     .pauseFor(2500)
     .deleteChars(10)
     .typeString('Dreams !')
