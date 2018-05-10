@@ -2,50 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b0ac9b1-3022-4ef6-8e1e-bd9fadf8ca30" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Home/static/Home/images/loading.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Home/static/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Home/static/pricing.pdf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Cv/static/Cv/img/1920x1080/01.jpg" afterPath="$PROJECT_DIR$/Cv/static/Cv/img/1920x1080/01.jpg" />
-      <change beforePath="$PROJECT_DIR$/Cv/static/Cv/img/1920x1080/03.jpg" afterPath="$PROJECT_DIR$/Cv/static/Cv/img/1920x1080/03.jpg" />
-      <change beforePath="$PROJECT_DIR$/Cv/static/Cv/img/1920x1080/04.jpg" afterPath="$PROJECT_DIR$/Cv/static/Cv/img/1920x1080/04.jpg" />
-      <change beforePath="$PROJECT_DIR$/Cv/templates/Cv/rushikeshsp.html" afterPath="$PROJECT_DIR$/Cv/templates/Cv/rushikeshsp.html" />
-      <change beforePath="$PROJECT_DIR$/Gainfins/urls.py" afterPath="$PROJECT_DIR$/Gainfins/urls.py" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/css/owl.carousel.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/css/owl.theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/css/responsive.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/css/style.css" afterPath="$PROJECT_DIR$/Home/static/Home/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/css/themefisher-fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/about/1.png" afterPath="$PROJECT_DIR$/Home/static/Home/images/about/1.png" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/about/2.png" afterPath="$PROJECT_DIR$/Home/static/Home/images/about/2.png" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/about/3.png" afterPath="$PROJECT_DIR$/Home/static/Home/images/about/3.png" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/dm1.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/dm2.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/dm3.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/ds.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/icons/app.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/icons/dm.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/icons/search.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/icons/web.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/k1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/k2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/k3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/logo_gf.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/sg1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/sg2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/sg3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/sos1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/team/team-cover1.png" afterPath="$PROJECT_DIR$/Home/static/Home/images/team/team-cover1.png" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/team/team-cover2.png" afterPath="$PROJECT_DIR$/Home/static/Home/images/team/team-cover2.png" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/team/team-cover3.png" afterPath="$PROJECT_DIR$/Home/static/Home/images/team/team-cover3.png" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/vw1.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/vw2.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Home/static/Home/images/vw3.jpeg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Home/static/Home/js/main.js" afterPath="$PROJECT_DIR$/Home/static/Home/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/Home/templates/Home/index.html" afterPath="$PROJECT_DIR$/Home/templates/Home/index.html" />
-      <change beforePath="$PROJECT_DIR$/Home/views.py" afterPath="$PROJECT_DIR$/Home/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Home/templates/Home/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#1;n#div#1;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -72,6 +30,18 @@
                 <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#3;n#div#1;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#section#7;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Home/static/Home/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+              <folding>
+                <marker date="1525968416326" expanded="true" signature="3557:3564" ph="×" />
               </folding>
             </state>
           </provider>
@@ -137,8 +107,8 @@
       <find>test</find>
       <find>btn-h</find>
       <find>quotemodal</find>
-      <find>get st</find>
       <find>btn-home</find>
+      <find>get st</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -161,10 +131,10 @@
         <option value="$PROJECT_DIR$/Home/static/Home/images/gainfinslogo.svg" />
         <option value="$PROJECT_DIR$/Gainfins/urls.py" />
         <option value="$PROJECT_DIR$/Home/views.py" />
-        <option value="$PROJECT_DIR$/Home/static/Home/js/main.js" />
         <option value="$PROJECT_DIR$/Cv/templates/Cv/rushikeshsp.html" />
         <option value="$PROJECT_DIR$/Home/static/Home/css/style.css" />
         <option value="$PROJECT_DIR$/Home/templates/Home/index.html" />
+        <option value="$PROJECT_DIR$/Home/static/Home/js/main.js" />
       </list>
     </option>
   </component>
@@ -259,6 +229,14 @@
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Gainfins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gainfins" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -344,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523605764862</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="images updated">
+      <created>1525968062204</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525968062204</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -640,13 +625,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Home/static/Home/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="70" column="14" lean-forward="true" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+          <folding>
+            <element signature="e#24#63#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -677,7 +658,7 @@
     <entry file="file://$PROJECT_DIR$/Home/templates/Home/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#1;n#div#1;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -685,6 +666,16 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#3;n#div#1;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#section#7;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home/static/Home/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+          <folding>
+            <marker date="1525968416326" expanded="true" signature="3557:3564" ph="×" />
           </folding>
         </state>
       </provider>

@@ -51,6 +51,9 @@ $(document).ready(function(){
                 required: true,
                 minlength: 2
             },
+            mobile: {
+                required: true,
+            },
             message: {
                 required: true,
                 minlength: 2
