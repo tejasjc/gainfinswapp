@@ -17,16 +17,17 @@ def index(request):
 def sendm(request):
     if request.method == 'POST':
         name = request.POST.get('name')
+        mobile = request.POST.get('mobile')
         email = request.POST.get('email')
         message = request.POST.get('message')
         response_data = {}
-        email_body="Name:"+name+"\nEmail:"+email+"\nMessage:\n"+message
+        email_body="Name:"+name+"\nMobile Number:"+str(mobile)+"\nEmail:"+email+"\nMessage:\n"+message
         try:
             send_mail("Contact Request",email_body,"gainfinswebapp@gmail.com",["tejasjc@gmail.com","rushikeshsp25@gmail.com","7177sc@gmail.com","sopanbembde@gmail.com"])
         except:
-            response_data['result'] = 'Error occured at server site , try again in sometime!'
+            response_data['result'] = 'Error occured at server site , try again in sometime , Or Try calling (+91-7775910607) Or Drop an email @ (contact@gainfins.com)'
         else:
-            response_data['result'] = 'Thak you ' + name + ', Our team will contact you soon !'
+            response_data['result'] = 'Thank you ' + name + ', Our team will contact you soon !'
 
         return HttpResponse(
             json.dumps(response_data),

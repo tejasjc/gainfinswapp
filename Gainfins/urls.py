@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
+from Cv import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^tejasjc/$', views.cv_tejas,name='cv_tejas'),
+    url(r'^rushikeshsp/$', views.cv_rushikesh,name='cv_rushikesh'),
+    url(r'^sopan/$', views.cv_sopan,name='cv_sopan'),
+    url(r'^shubham/$', views.cv_shubham,name='cv_shubham'),
     url(r'^cv/', include('Cv.urls')),
     url(r'^',include('Home.urls')),
 ]

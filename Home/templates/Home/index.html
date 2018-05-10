@@ -1,232 +1,300 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" xmlns="http://www.w3.org/1999/html">
     <head>
         {% load staticfiles %}
+        <title>Website Design Company Pune, India | Digital Marketing Company | Gainfins</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GAINFINS</title>
-        <meta name="description" content="">
+        <meta name="description" content="In today's Digital world Having a GREAT website is important than just having a website. Gainfins a web design and development company in Pune, provides customized solutions
+                                            to design and develop websites, mobile application , graphics design and much more..">
+        <meta name="keywords" content="web development,website development,website design,application development,application design,seo,digital marketing,social media marketing,
+                                        responsive website,ecommerce website,android application development,ui/ux design">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="www.gainfins.com" />
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" type="image/png" href="{%  static 'favicon.ico' %}"/>
+
+
         <!-- Fonts -->
-        <!-- Source Sans Pro -->
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- CSS -->
         <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
         <!-- Bootstrap CDN -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'Home/css/themefisher-fonts.css' %}">
-        <link rel="stylesheet" href="{% static 'Home/css/font-awesome.min.css' %}">
-        <link rel="stylesheet" href="{% static 'Home/css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'Home/css/animate.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
         <link rel="stylesheet" href="{% static 'Home/css/style.css' %}">
-        <!-- Responsive Stylesheet -->
-        <link rel="stylesheet" href="{% static 'Home/css/responsive.css' %}">
+
+
     </head>
-
     <body id="body">
+    <!--Top Bar-->
+    <ul class="nav topbar justify-content-end">
+	  <li class="nav-item">
+	    <a class="nav-link" href="#"><i class="material-icons d-inline-block align-top">call</i>+91-7775910607</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="mailto:contact@gainfins.com"><i class="material-icons d-inline-block align-top">email</i>contact@gainfins.com</a>
+	  </li>
+	</ul>
+	<!--Top bar ends-->
+    <!--main bar-->
+	<!-- Image and text -->
+	<nav class="navbar sticky-top navbar-dark navbar-expand-md justify-content-center" id="main-nav">
+	    <a class="navbar-brand" href="{%url 'Home:index'%}"><img src="{% static 'Home/images/logo.png' %}"  height="80" class="d-inline-block align-center" alt=""></a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+	        <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
+	        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+	            <li class="nav-item">
+	                <a class="nav-link" href="#services">Services</a>
+	            </li>
+	             <li class="nav-item">
+	                <a class="nav-link" href="#works">Work</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" href="#testimonials">Testimonials</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" href="#footer">About</a>
+	            </li>
+	             <li class="nav-item">
+	                <a class="nav-link" data-toggle="modal" data-target="#contactModal" href="#">Contact</a>
+	            </li>
+	             <li class="nav-item imp">
+	                <a class="nav-link" data-toggle="modal" data-target="#quoteModal" href="#">Get a quote</a>
+	            </li>
+	        </ul>
+	    </div>
+	</nav>
+	<!--main bar ends-->
 
-    	<div id="preloader">
-    		<div class="book">
-    		  <div class="book__page"></div>
-    		  <div class="book__page"></div>
-    		  <div class="book__page"></div>
-    		</div>
-    	</div>
-
-	    <!--
-	    Header start
-	    ==================== -->
-        <div class="container">
-             <nav class="navbar navbar-fixed-top navigation navbar-toggleable-md bg-white navbar-custom" id="top-nav">
-                <a class="navbar-brand" href="#">
-                    <img src="{% static 'Home/images/logo_gf.png' %}" alt="">
-                </a>
-
-              <button class="navbar-toggler hidden-md-up float-lg-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                  <a href="#about"><i class="material-icons">menu</i></a>
-              </button>
-              <div class="collapse navbar-toggleable-md" id="navbarResponsive">
-                <ul class="nav navbar-nav menu float-lg-right" id="top-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#service">SERVICES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#team">TEAM</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#works">WORK</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACT</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-        </div>
 
 
 	    <section class="hero-area bg-1">
+
 	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-7">
+                <div class="row">
+	                <div class="col-md-9">
 	                    <div class="block">
 	                        <h1 class="wow fadeInDown" data-wow-delay="0.3s" data-wow-duration=".2s">Bring Your Idea Into Reality...! </h1>
 	                        <div id="app"></div>
 	                        <div class="wow fadeInDown" data-wow-delay="0.7s" data-wow-duration=".7s">
-	                        	<a class="btn btn-home theme" href="#about" role="button">Get Started</a>
+	                        	<a class="btn btn-home theme"  href="#info" role="button">Get Started</a>
 	                        </div>
 	                    </div>
-	                </div>
+	                </div >
+                    <div class="col-md-6">
 
+                    </div>
 	            </div><!-- .row close -->
 	        </div><!-- .container close -->
 	    </section><!-- header close -->
 
-
-
-        <!--
-        About start
+          <!--
+        info start
         ==================== -->
-        <section  class="section about bg-gray" id="about">
-            <div class="container">
-                <div class="row">
+        <section  class="info" id="info">
+            <h2>GAINFINS - A WEBSITES DESIGN & DEVELOPMENT COMPANY</h2>
+            <label><i class="material-icons">group_work</i></label>
+            <div class="container ">
+                <div class="row ">
                     <div class="col-md-7 col-sm-12 wow fadeInLeft">
-                        <div class="content">
+                        <div class="content mb-4">
                         	<div class="sub-heading">
-                        		<h3> It’s always profitable to be discoverable on the internet. Because everyone can see you when your on the internet.</h3>
+                        		<h3> It’s always profitable to be discoverable on the internet. Because everyone can see you when your on the internet,</h3>
                         	</div>
-                            <p>Placing your website address on your promotional materials will help you gain additional exposure and encourage the visitors to first check your site for the information they are seeking. You can set-up personalized email addresses for your company and executives.</p>
-                            <p>
-                                So, do you want to put your venture online? Don't worry, we'll help you out with our customized <a href="#services"><font color="#81d4fa">solutions</font></a>.
+                            <p >Placing your website address on your promotional materials will help you gain additional exposure and encourage the visitors to first check your site for the information they are seeking. You can set-up personalized email addresses for your company and executives.</p>
+                            <p >
+                                So, do you want to put your venture online? Don't worry, we'll help you out with our customized <a href="#services" style="color: #FFFFFF">solutions</a>.
                             </p>
 
                         </div>
                     </div>
-                    <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
-                        <div class="carousel slide" data-ride="carousel">
-                                      <div class="carousel-inner" role="listbox">
-                                        <div class="carousel-item active">
-                                          <img class="d-block img-fluid" src="{% static 'Home/images/about/1.png' %}" alt="First slide">
-                                        </div>
-                                        <div class="carousel-item">
-                                          <img class="d-block img-fluid" src="{% static 'Home/images/about/2.png' %}" alt="Second slide">
-                                        </div>
-                                        <div class="carousel-item">
-                                          <img class="d-block img-fluid" src="{% static 'Home/images/about/3.png' %}" alt="Third slide">
-                                        </div>
-                                      </div>
-
-                                </div>
+                    <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s" >
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="{% static 'Home/images/about/1.png' %}" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'Home/images/about/2.png' %}" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static 'Home/images/about/3.png' %}" alt="Third slide">
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section><!-- #about close -->
+            <br>
+            <div class="container">
+                <div class="content wow fadeInRight">
+                  <h3>Today's world is a digital world, with nearly half the world online. With so many people using internet. It makes sence for a business to tap into digital World.</h3>
+                </div>
+                <div class="row ">
+                <div class="col-md-4 call mb-4">
+                    <i class="material-icons call-icon wow jello d-inline-block align-top mb-3">call</i><h3>+91-7775910607</h3><h3>+91-9284096193</h3>
+                </div>
+                    <div class="col-md-4 write mb-4" id="write_us">
+                        <a href="#contact">
+                    <i class="material-icons d-inline-block align-top mb-3">border_color</i><h3>Write Us Now</h3>
+                            </a>
+                </div>
+                <div class="col-md-4 email mb-4">
+                    <a href="mailto:contact@gainfins.com"> <i class="material-icons email-icon wow jello d-inline-block align-top mb-3">email</i><h3>contact@gainfins.com</h3></a>
+                </div>
+            </div>
+            </div>
+
+        </section><!-- #info close -->
         <!--
-        About end
+        info end
         ==================== -->
-
         <!--service start-->
-        <section id="services" class="section section-padded">
+        <section id="services" class="services">
+                     <div class="titlestyle">
+                        <h2>Services</h2>
+                         <h4 class="" >Achieve the best results with our wide variety of options and also @ Lowest Price Tag !</h4>
+                    </div>
         <div class="container">
-            <div class="row text-center title">
-                <div class="titlestyle">
-                <h2 >Services</h2>
-            </div>
-                <h4 class="light muted">Achieve the best results with our wide variety of options!</h4>
-
-
-            </div>
-            <div class="row services">
-                <div class="col-md-3 wow fadeInLeft" >
+            <div class="row">
+                <div class="col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
                     <div class="subservice">
                         <div class="icon-holder">
-                            <img src="{% static 'Home/images/icons/web.png' %}" alt="" class="icon">
+                           <i class="material-icons">desktop_mac</i>
                         </div>
                         <h4 class="heading">Web Development</h4>
                         <p class="description">Your website is a powerful marketing tool. We will build you a responsive website to improve your business image.</p>
                     </div>
                 </div>
-                <div class="col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
+                <div class="col-md-3 wow fadeInLeft" >
                     <div class="subservice">
                         <div class="icon-holder">
-                            <img src="{% static 'Home/images/icons/app.png' %}" alt="" class="icon">
+                           <i class="material-icons">phone_iphone</i>
                         </div>
                         <h4 class="heading"> Application Development</h4>
                         <p class="description">High-end and cost-efficient mobile app development to accomplish all your business needs.</p>
                     </div>
                 </div>
-                <div class="col-md-3 wow fadeInLeft" data-wow-delay="0.5s">
+                <div class="col-md-3 wow fadeInRight">
                     <div class="subservice">
                         <div class="icon-holder">
-                            <img src="{% static 'Home/images/icons/search.png' %}" alt="" class="icon">
+                            <i class="material-icons">search</i>
                         </div>
                         <h4 class="heading">SEO</h4>
                         <p class="description">When your site appears on the first page of major search engines, such as Google, your potential customers are more likely to trust your brand.</p>
                     </div>
                 </div>
-                <div class="col-md-3 wow fadeInLeft" data-wow-delay="0.7s">
+                <div class="col-md-3 wow fadeInRight" data-wow-delay="0.3s">
                     <div class="subservice">
                         <div class="icon-holder">
-                            <img src="{% static 'Home/images/icons/dm.png' %}" alt="" class="icon">
+                            <i class="material-icons">phonelink_ring</i>
                         </div>
                         <h4 class="heading">Digital Marketing</h4>
-                        <p class="description">Marketing will keep you on toes in promoting and endorsing your brand. We offer various cost-efficient digital marketing strategies to increase your customer base.</p>
+                        <p class="description">We offer various cost-efficient digital marketing strategies to increase your customer base.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="subservice">
+                        <div class="icon-holder">
+                            <i class="material-icons">brush</i>
+                        </div>
+                        <h4 class="heading">Logo Design</h4>
+                        <p class="description">Our dedicated team will design an eye-catching & impressive logo which will define your brand.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInLeft" >
+                    <div class="subservice">
+                        <div class="icon-holder">
+                           <i class="material-icons">filter_vintage</i>
+                        </div>
+                        <h4 class="heading">Graphic Design</h4>
+                        <p class="description">We design awesome advertising stuff (banner, Pamplate,etc). This will help you to promote your brand Offline and Online aswell.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInRight" >
+                    <div class="subservice">
+                        <div class="icon-holder">
+                            <i class="material-icons">web</i>
+                        </div>
+                        <h4 class="heading">Domain Registration</h4>
+                        <p class="description">Domain name is your online identity. we will help you get domain name that you want & make your presence online.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="subservice">
+                        <div class="icon-holder">
+                           <i class="material-icons">view_week</i>
+                        </div>
+                        <h4 class="heading">Web Hosting</h4>
+                        <p class="description">Web Hosting is getting space on server machine.These machines will hold your entire data and also serves the user requests.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cut cut-bottom"></div>
     </section>
         <!-- service end-->
 
         <!--
         Service start
         ==================== -->
-        <section id="service" class="service section bg-gray">
-            <div class="container">
-                <div class="row">
+        <section id="service" class="service" style="background-color: #272727">
+            <div class="container-fluid">
+
                     <div class=" wow fadeInUp mb-3">
-                        <div class="heading wow fadeInUp">
-                        <h2>Find Better Solutions.Build Better Products.</h2>
+                        <div class="serviceheading wow fadeInUp">
+                        <h2 >Find Better Solutions. Build Better Products.</h2>
+                        <h4>We provide the below mentioned features which make your site Different, Efficient & Effective.</h4>
+                    </div>
                     </div>
 
-                    </div>
-                    <div class="col-sm-6 col-md-3 wow fadeInLeft">
+                <div class="row">
+                    <div class="col-md-2 wow fadeInLeft" data-wow-delay="0.6s">
                         <div class="block">
                             <i class="material-icons">settings_overscan</i>
-                            <h3>Fully Responsive</h3>
-                            <p> Responsive websites provide an optimal viewing experience, ease of reading and navigation with minimum resizing, panning and scrolling.</p>
+                            <h3 style="color: #2b9464">Fully Responsive</h3>
+                            <p style="color: #FFFFFF"> Responsive websites provide an optimal viewing experience, ease of reading and navigation with minimum resizing, panning and scrolling.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
-                        <div class="block">
+                    <div class="col-md-2 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="block" >
                             <i class="material-icons">fast_forward</i>
-                        	<h3>Speed Optimized</h3>
-                            <p>We build instantly loadable and swiftly navigable websites, which is a primary factor for dictating success in modern online businesses. Speed is love!!</p>
+                        	<h3 style="color: #2b9464">Speed Optimized</h3>
+                            <p style="color: #FFFFFF">We build instantly loadable and swiftly navigable websites, which is a primary factor for dictating success in modern online businesses. Speed is love!!</p>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.9s">
+                    <div class="col-md-2 wow fadeInLeft">
                         <div class="block">
                             <i class="material-icons">search</i>
-                            <h3>Fully SEO Optimized</h3>
-                            <p>Search Engine Optimization (SEO) is the practice of increasing the quantity and quality of traffic to your website through organic search engine results.</p>
+                            <h3 style="color: #2b9464">Fully SEO Optimized</h3>
+                            <p style="color: #FFFFFF">Search Engine Optimization (SEO) is the practice of increasing the quantity and quality of traffic to your website through organic search engine results.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
+                    <div class="col-md-2 wow fadeInRight">
+                        <div class="block">
+                            <i class="material-icons">signal_cellular_off</i>
+                            <h3 style="color: #2b9464">Offline First</h3>
+                            <p style="color: #FFFFFF">We use revolutionary Offline First approach.This helps loading websites even if you are on Lifi mode(slow connectivity to the internet). </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="block">
                             <i class="material-icons">trending_up</i>
-                            <h3>Tons of Features</h3>
-                            <p>Enhance your website's productivity with web analytics, A/B testing and more. Your website's security is also our major concern! </p>
+                            <h3 style="color: #2b9464">Latest Trends</h3>
+                            <p style="color: #FFFFFF">We build websites using latest trends in the changing market. which helps you to stay upto date with recent technology and enjoy the awesome new features! </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 wow fadeInRight" data-wow-delay="0.6s">
+                        <div class="block">
+                            <i class="material-icons">more</i>
+                            <h3 style="color: #2b9464">Tons of Features</h3>
+                            <p style="color: #FFFFFF">Enhance your website's productivity with web analytics, A/B testing and more. Your website's security is also our major concern! </p>
                         </div>
                     </div>
 
@@ -235,15 +303,12 @@
             </div><!-- .container close -->
         </section><!-- #service close -->
 <!-- team start -->
-<section id="team" class="section gray-bg">
+<section id="team" class="teamsection">
         <div class="container">
-            <div class="heading">
-                <div  class="tytlestyle">
-                    <h2 class="margin-top">Team</h2>
-                 <h4 class="light muted" >"None of us is as smart as all of us".</h4>
+                <div  class="titlestyle">
+                    <h2 >Team</h2>
+                 <h4 >"Alone we can do so little, together we can do so much"</h4>
                 </div>
-
-            </div>
             <div class="row">
                 <div class="col-md-3 wow zoomIn">
                     <a href="{% url 'Cv:cv_tejas' %}">
@@ -273,7 +338,7 @@
                         <img src="{% static 'Home/images/team/02.jpg' %}" alt="Team Image" class="avatar" width="80%" height="80%">
                         <div class="title">
                             <h4>Rushikesh Phalke</h4>
-                            <h5 class="muted regular">Backend Hero</h5>
+                            <h5 class="muted regular">Backend Expert</h5>
                         </div>
                     </div>
                     </a>
@@ -289,7 +354,7 @@
                         <img src="{% static 'Home/images/team/03.jpg' %}" alt="Team Image" class="avatar" width="80%" height="80%">
                         <div class="title">
                             <h4>Sopan Bembde</h4>
-                            <h5 class="muted regular">Cyber Security</h5>
+                            <h5 class="muted regular">Security Specialist</h5>
                         </div>
                     </div>
                     </a>
@@ -305,7 +370,7 @@
                         <img src="{% static 'Home/images/team/04.jpg' %}" alt="Team Image" class="avatar" width="80%" height="80%">
                         <div class="title">
                             <h4>Shubham Chavan</h4>
-                            <h5 class="muted regular">Full Stack Developer</h5>
+                            <h5 class="muted regular">Mobile Developer</h5>
                         </div>
                     </div></a>
                 </div>
@@ -313,29 +378,27 @@
         </div>
     </section>
 <!-- team ends -->
-         <section id="works" class="section bg-gray">
-                <div class="container">
-                        <div class="heading">
-                            <div  class="tytlestyle mb-3">
-                                 <h2 class="margin-top">Work</h2>
+         <section id="works" class="works">
+             <div  class="titlestyle">
+                                 <h2>Our Work</h2>
+                                <h4>There are many ways to promote a Business online. Website is one of them.</h4>
 
                             </div>
-                        </div>
-                        <div class="row">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
                             <div class="overlayit">
-                                <div class="col-md-2">
-                                </div>
-                            <div class="col-md-8 wow fadeInLeft" data-wow-delay="0.2s">
+                            <div class=" wow fadeInLeft" data-wow-delay="0.2s">
                                 <div class="carousel slide" data-ride="carousel">
                                       <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/vw1.jpeg' %}" alt="First slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/vw1.jpeg' %}" alt="First slide"  width="100%">
                                         </div>
                                         <div class="carousel-item">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/vw2.jpeg' %}" alt="Second slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/vw2.jpeg' %}" alt="Second slide"   width="100%">
                                         </div>
                                         <div class="carousel-item">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/vw3.jpeg' %}" alt="Third slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/vw3.jpeg' %}" alt="Third slide"  width="100%">
                                         </div>
                                       </div>
                                       <div class="overlay-data">
@@ -345,25 +408,21 @@
                                       </div>
                                 </div>
                             </div>
-                            <div class="col-md-2">
-                                </div>
                             </div>
-                            </div>
-                            <div class="row mt-3">
+                        </div>
+                        <div class="col-md-6">
                             <div class="overlayit">
-                                <div class="col-md-2">
-                                </div>
-                            <div class="col-md-8 wow fadeInLeft" data-wow-delay="0.4s">
+                            <div class=" wow fadeInLeft" data-wow-delay="0.4s">
                                 <div class="carousel slide" data-ride="carousel">
                                       <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/k1.png' %}" alt="First slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/k1.png' %}" alt="First slide" style="background-size:cover;">
                                         </div>
                                         <div class="carousel-item">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/k2.png' %}" alt="Second slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/k2.png' %}" alt="Second slide" style="background-size:cover;">
                                         </div>
                                         <div class="carousel-item">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/k3.png' %}" alt="Third slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/k3.png' %}" alt="Third slide" style="background-size:cover;">
                                         </div>
                                       </div>
                                       <div class="overlay-data">
@@ -373,25 +432,21 @@
                                       </div>
                                 </div>
                             </div>
-                            <div class="col-md-2">
-                                </div>
                             </div>
                         </div>
-                            <div class="row mt-3">
-                                <div class="overlayit">
-                                    <div class="col-md-2">
-                                    </div>
-                            <div class="col-md-8 wow fadeInRight" data-wow-delay="0.6s">
+                        <div class="col-md-6">
+                             <div class="overlayit">
+                            <div class=" wow fadeInRight" data-wow-delay="0.6s">
                                 <div class="carousel slide" data-ride="carousel">
                                       <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/sg1.png' %}" alt="First slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/sg1.png' %}" alt="First slide" style="background-size:cover;">
                                         </div>
                                         <div class="carousel-item">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/sg2.png' %}" alt="Second slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/sg2.png' %}" alt="Second slide" style="background-size:cover;">
                                         </div>
                                         <div class="carousel-item">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/sg3.png' %}" alt="Third slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/sg3.png' %}" alt="Third slide" style="background-size:cover;">
                                         </div>
                                       </div>
                                       <div class="overlay-data">
@@ -401,26 +456,21 @@
                                       </div>
                                 </div>
                             </div>
-
-                                     <div class="col-md-2">
-                                    </div>
                             </div>
                         </div>
-                        <div class="row mt-3">
-                                <div class="overlayit">
-                                    <div class="col-md-2">
-                                    </div>
-                                    <div class="col-md-8 wow fadeInLeft" data-wow-delay="0.7s">
+                        <div class="col-md-6">
+                             <div class="overlayit">
+                                    <div class=" wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="carousel slide ml-3" data-ride="carousel">
                                       <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/dm1.jpeg' %}" alt="First slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/dm1.jpeg' %}" alt="First slide" style="background-size:cover;">
                                         </div>
                                         <div class="carousel-item">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/dm2.jpeg' %}" alt="Second slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/dm2.jpeg' %}" alt="Second slide" style="background-size:cover;">
                                         </div>
                                         <div class="carousel-item">
-                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/dm3.jpeg' %}" alt="Third slide" style="background-size:cover;">
+                                          <img class="d-block img-fluid img-meta" src="{% static 'Home/images/work/dm3.jpeg' %}" alt="Third slide" style="background-size:cover;">
                                         </div>
                                       </div>
                                       <div class="overlay-data">
@@ -430,40 +480,69 @@
                                       </div>
                                 </div>
                             </div>
-
-                                     <div class="col-md-2">
-                                    </div>
                             </div>
                         </div>
-                        <div class="row mt-3">
-                                <div class="overlayit">
-                                    <div class="col-md-2">
-                                    </div>
-                                    <div class="col-md-6 wow fadeInRight ml-3" data-wow-delay="0.8s">
-                                <div class="overlayit">
-                                <img class="d-block img-fluid img-meta" src="{% static 'Home/images/ds.png' %}" alt="DigiShelf image">
-                                    <div class="overlay-data">
-                                        <div class="overlay-text">DigiShelf<br>
-                                                    <p style="font-size:14px">A desktop application for Library management.</p>
-                                                </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                                     <div class="col-md-2">
-                                    </div>
-                            </div>
-                        </div>
-
-
-
-
+                    </div>
                 </div>
          </section>
+    <section id="testimonials" class="testimonials">
+        <div class="container" >
+    <div class="row mb-4 mt-4">
+        <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                        <div class="block">
+                            <div class="heading wow fadeInUp">
+                                <h2>Testimonials</h2>
+                                <p>What they are saying...</p>
+                            </div>
+                        </div>
+                    </div>
+
+        <div class=" col-md-12">
+            <div id="testimonial-slider" class="owl-carousel">
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="{% static 'Home/images/testimonials/img-3.jpg'%}" alt="" class="img-responsive">
+                    </div>
+                    <h3 class="testimonial-title">
+                        Omkar Gaikwad
+                        <small>Director, MockingBird Pvt Ltd</small>
+                    </h3>
+                    <p class="description">You will get to see what i think and my experience about Gainfins very soon..</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="{% static 'Home/images/testimonials/img-3.jpg'%}" alt="" class="img-responsive">
+                    </div>
+                    <h3 class="testimonial-title">
+                        Ashitosh Dhapate
+                        <small>Head, Visionware InfoTech</small>
+                    </h3>
+                    <p class="description">You will get to see what i think and my experience about Gainfins very soon..</p>
+                </div>
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="{% static 'Home/images/testimonials/img-3.jpg'%}" alt="" class="img-responsive">
+                    </div>
+                    <h3 class="testimonial-title">
+                        Samihan Deshmukh
+                        <small>Team Lead, Kratos Racing</small>
+                    </h3>
+                    <p class="description">You will get to see what i think and my experience about Gainfins very soon..</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </section>
+
+
         <!--
+
         Contact start
         ==================== -->
-        <section id="contact" class="section contact">
+        <section id="contact" class="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
@@ -482,87 +561,173 @@
                     	        <div class="input-field">
                     	            <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
                     	        </div>
+                                <div class="input-field">
+                    	            <input type="text" class="form-control" placeholder="Mobile Number" name="mobile" id="mobile">
+                    	        </div>
                     	        <div class="input-field">
                     	            <input type="email" class="form-control" placeholder="Email Address" name="email" id="email">
                     	        </div>
                     	        <div class="input-field">
                     	            <textarea class="form-control" placeholder="Your Message" rows="3" name="message" id="message"></textarea>
                     	        </div>
-                    	        <button class="btn btn-send" type="submit">Send</button>
+                    	        <button class="btn btn-send" type="submit" id="contact_form_submit_button"><img src="{% static 'Home/images/loading.gif' %}" height="40px"><p>Send</p></button>
                     	    </form>
                     	</div>
-                        <p id="result">hello</p>
+                        <p id="result" style="color: green"></p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="know" class="section bg-gray">
-        <div class="container">
-            <div class="container content-lg">
-                    <div class="row">
-                        <div class="col-sm-4 mb-3">
-                            <div class="text-right sm-text-left">
-                                <h2 class="margin-b-0">Reach us</h2>
-
-                            </div>
-                        </div>
-                        <div class="col-sm-8 col-sm-offset-1">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6 mb-3">
-                                    <h5>Location</h5>
-                                    <a>Pune, India</a>
-                                </div>
-                                <div class="col-md-3 col-xs-6 mb-3">
-                                    <h5>Phone</h5>
-                                    <a>9284096193</a>
-                                </div>
-                                <div class="col-md-3 col-xs-6 mb-3" >
-                                    <h5>Email</h5>
-                                    <a href="mailto:support@gainfins.com">contact@gainfins.com</a>
-                                </div>
-                                <div class="col-md-3 col-xs-6 mb-3">
-                                    <h5>Web</h5>
-                                    <a href="bit.ly/gainfins">www.gainfins.com</a>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Modal for get a quote -->
+                <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <div class="row">
+                              <div class="col-md-5">
+                                  <h5 class="mb-3">Call us</h5>
+                                  <h6>+91-7775910607</h6>
+                                  <h6>+91-9284096193</h6>
+                              </div>
+                              <div class="col-md-2">
+                                  <h5>OR</h5>
+                              </div>
+                              <div class="col-md-5">
+                                  <h5 class="mb-3">Drop us an email</h5>
+                                  <h6>contact@gailfins.com</h6>
+                              </div>
+                          </div>
+                          <h5 class="mt-5">Just Take One Step Forword, We Shall Handle The Rest.</h5><br>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
-                    <!--// end row -->
+                  </div>
                 </div>
-        </div>
-        </section>
+                <!-- Modal for get a quote -->
+                <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="quoteModalLabel">Hey There! Hope you're doing Well.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <h5>get quotation <a href="{% static 'pricing.pdf' %}" style="color: blue" target="_blank"> here</a></h5><br>
+                          <h5>For more details...</h5><br>
+                          <div class="row">
+                              <div class="col-md-5">
+                                  <h5 class="mb-3">Contact our Team</h5>
+                                  <h6>+91-7775910607</h6>
+                                  <h6>+91-9284096193</h6>
+                              </div>
+                              <div class="col-md-2">
+                                  <h5>OR</h5>
+                              </div>
+                              <div class="col-md-5">
+                                  <h5 class="mb-3">Drop us an email</h5>
+                                  <h6>contact@gailfins.com</h6>
+                              </div>
+                          </div>
+                          <h5 class="mt-5">Just Take One Step Forword, We Shall Handle The Rest.</h5><br>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal"></button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-        <section clas="wow fadeInUp">
-        	<div class="map-wrapper">
-        	</div>
-        </section>
-
-        <footer>
+        <footer id="footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="block">
-                            <p>Copyright &copy; <a href="http://www.gainfins.com">GainFins</a>| All right reserved.</p>
-                        </div>
-                    </div>
+                 <div class="row">
+                <div class="col-md-3 text-left">
+                    <a class="brand" href="{% url 'Home:index'%}"><img src="{% static 'Home/images/logo.png' %}"  height="80"  alt="gainfins.com"></a>
+                    <br><br>
+                    <p><i class="material-icons d-inline-block align-top">location_on</i>Pune, India</p>
+                    <br>
+                    <p><i class="material-icons d-inline-block align-top">call</i> +91-7775910607</p>
+                    <p><i class="material-icons d-inline-block align-top">call</i> +91-9284096193</p>
+                    <br>
+                    <a href="mailto:support@gainfins.com"><i class="material-icons d-inline-block align-top">email</i> contact@gainfins.com</a>
                 </div>
+                <div class="col-md-2 text-left">
+                    <h4>Quick Links</h4>
+                    <br>
+                    <ul>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                         <li>
+                            <a href="#works">Work</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#footer">About</a>
+                        </li>
+                         <li>
+                            <a data-toggle="modal" data-target="#contactModal" href="#">Contact</a>
+                        </li>
+                         <li>
+                            <a data-toggle="modal" data-target="#quoteModal" href="#">Get a quote</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 text-left">
+                    <h4>Follow Us</h4>
+                    <br>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/gainfins/" target="_blank">Facebook</a>
+                        </li>
+                         <li>
+                            <a href="https://www.instagram.com/gainfins_insta/" target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/gainfins/" target="_blank">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 text-left">
+                    <h4>About US</h4>
+                    <br>
+                    <p>We are website design and development company based in Pune, India. We are a collaborative team of strategists, website designers, developers and creative coders with a mission of visually expressing your business through elegant and fast websites. With insightful thinking, intelligent design and innovative development, your website is more than just a job to us. </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="container-fluid">
+                <p>Copyright &copy; <a href="http://www.gainfins.com">GainFins</a>| All right reserved.</p>
             </div>
         </footer>
 
 
-        <!-- Js -->
+          <!-- Js -->
+
+
         <script src="{% static 'Home/js/vendor/jquery-2.1.1.min.js' %}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         <script src="{% static 'Home/js/vendor/modernizr-2.6.2.min.js' %}"></script>
-        <script src="{% static 'Home/js/jquery.lwtCountdown-1.0.js' %}"></script>
-        <script src="{% static 'Home/js/owl.carousel.min.js' %}"></script>
         <script src="{% static 'Home/js/jquery.validate.min.js' %}"></script>
         <script src="{% static 'Home/js/jquery.form.js' %}"></script>
-        <script src="{% static 'Home/js/jquery.nav.js' %}"></script>
-            <script src="{% static 'Home/js/typewriter.js' %}"></script>
-
+        <script src="{% static 'Home/js/jquery.nav.js' %}"></script>    <!--for smooth scrolling-->
+        <script src="{% static 'Home/js/typewriter.js' %}"></script>
         <script src="{% static 'Home/js/wow.min.js' %}"></script>
+      <script src="{% static 'Home/js/owl.carousel.min.js' %}"></script>
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script> -->
         <script src="{% static 'Home/js/main.js' %}"></script>
 

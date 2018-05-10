@@ -1,19 +1,37 @@
-$(window).load(function() {
-    $("#preloader").fadeOut("slow");
-});
-
 $(document).ready(function(){
 
 
      new WOW().init();
 
 
-     $('#top-nav').onePageNav({
+     $('#main-nav').onePageNav({
+        currentClass: 'current',
+        changeHash: true,
+        scrollSpeed: 1200
+    });
+     $('#write_us').onePageNav({
         currentClass: 'current',
         changeHash: true,
         scrollSpeed: 1200
     });
 
+
+
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:true,
+        navigation:false,
+        navigationText:["",""],
+        slideSpeed:1000,
+        singleItem:true,
+        autoPlay:true
+    });
+
+
+    $("#contact_form_submit_button").children('img').hide();    //to hide loding animation
 
     //animated header class
     $(window).scroll(function() {
@@ -54,6 +72,11 @@ $(document).ready(function(){
             email: "Please enter a valid email address"
         },
          submitHandler: function(form) {
+
+            $("#contact_form_submit_button").children('img').show();    //to show loding animation
+             $("#contact_form_submit_button").children('p').hide();    //to hide send option
+              $("#contact_form_submit_button").prop('disabled', true);    //to disable send option
+
         $.ajax({
             url : "sendmail/", // the endpoint
             type : "POST", // http method
@@ -65,9 +88,14 @@ $(document).ready(function(){
             // handle a successful response
             success : function(json) {
                 $('#name').val(''); // remove the value from the input
+                $('#mobile').val(''); // remove the value from the input
                 $('#email').val(''); // remove the value from the input
                 $('#message').val(''); // remove the value from the input
+                $("#contact_form_submit_button").children('img').hide();    //to hide loding animation
                  $('#result').show().html(json['result'])
+                $("#contact_form_submit_button").prop('disabled', false);    //to enable send option
+             $("#contact_form_submit_button").children('p').show();    //to show send option
+
             },
 
             // handle a non-successful response
