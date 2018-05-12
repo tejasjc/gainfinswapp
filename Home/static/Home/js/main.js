@@ -85,6 +85,7 @@ $(document).ready(function(){
             type : "POST", // http method
             data : { name : $('#name').val(),
                      email: $('#email').val(),
+                     mobile:$('#mobile').val(),
                      message: $('#message').val(),
                     }, // data sent with the post request
 
