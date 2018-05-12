@@ -559,16 +559,16 @@
                     	    <form action="" method="post" id="contact-form">
                                 {% csrf_token %}
                     	        <div class="input-field">
-                    	            <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
+                    	            <input type="text" class="form-control" placeholder="Your Name" name="name" id="name" onkeypress="return alpha(event)" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off>
                     	        </div>
                                 <div class="input-field">
-                    	            <input type="text" class="form-control" placeholder="Mobile Number" name="mobile" id="mobile">
+                    	            <input type="text" class="form-control" placeholder="Mobile Number" name="mobile" id="mobile" onkeypress="return alpha(event)" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off>
                     	        </div>
                     	        <div class="input-field">
                     	            <input type="email" class="form-control" placeholder="Email Address" name="email" id="email">
                     	        </div>
                     	        <div class="input-field">
-                    	            <textarea class="form-control" placeholder="Your Message" rows="3" name="message" id="message"></textarea>
+                    	            <textarea class="form-control" placeholder="Your Message" rows="3" name="message" id="message" onkeypress="return alpha(event)" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off></textarea>
                     	        </div>
                     	        <button class="btn btn-send" type="submit" id="contact_form_submit_button"><img src="{% static 'Home/images/loading.gif' %}" height="40px"><p>Send</p></button>
                     	    </form>
